@@ -44,7 +44,7 @@ export default class Movie extends Component {
     }
 
     return (
-      <div><MovieCard movie={this.state.movie} saveMovie={this.saveMovie}/>
+      <div><MovieCard movie={this.state.movie} key={this.state.movie.id} saveMovie={this.saveMovie}/>
       </div>
     );
   }
